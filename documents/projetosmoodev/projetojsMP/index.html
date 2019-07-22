@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+    <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!-- Compiled and minified JavaScript -->
+              
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+
+      
+            
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="css/style.css">
+    
+  <title> Gerando mapa apartir do cep </title>
+</head>
+<body>
+   <div class="navbar-fixed  ">
+    <nav>
+      <div class="nav-wrapper teal">
+        <a href="#!" class="brand-logo">Logo</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+          
+    <section class="container">
+      <div class="row">
+        <div class="col s12"> 
+          <h4> Comece colocando seu CEP</h4>
+          <div id="div-cep">
+              <input id="cep-usuario" type="text" class="form-control cep-mask" placeholder="Ex.: 00000-000"> 
+              <button class="waves-effect waves-light btn" id="procurar-cep"> Procurar</button>
+          </div>
+          <div class="row">
+            <div class="col s8 offset-s2">
+              <section id="resultado"></section>
+            </div>
+          </div>
+          <div id="div-numero">
+              <input id="numero-casa" type="number" class="form-control " placeholder=" Digite o número da casa"> 
+              <button class="waves-effect waves-light btn" id="botao-mapa"> Gerar Mapa</button>    
+          </div>
+        </div>
+        <div id="map"></div>
+      </div> 
+    </section>
+
+   <!--JavaScript at end of body for optimized loading-->
+   <script   src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlijoQhZde8cSi00VngVwAlmBbr7VdbGE&callback=initMap"
+    async defer></script>
+    <!-- Meu JS -->
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
