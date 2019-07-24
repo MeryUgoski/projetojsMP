@@ -1,0 +1,43 @@
+@@ -0,0 +1,41 @@
+body {
+	margin: 0 0 500px 0;
+	padding: 0;
+}
+
+ul {
+	margin: 0 33%;
+	padding: 10px;
+}
+
+header {
+	background-color: grey;
+	padding: 50px;
+	justfy-content:center;
+}
+
+ul > li { 
+	display: inline-block;
+	padding: 11px 17px;
+	letter-spacing: 1px;
+	background-color: white;
+}
+
+#menu {
+	list-style: none;
+	list-style-type: none;
+	text-align: center;
+	font-size: 150%;
+}
+
+#logo {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+nav > ul > li:hover {
+	cursor: pointer;
+	background-color: gold;
+	border-radius: 20px;
+	transition: 23s color;
+}
